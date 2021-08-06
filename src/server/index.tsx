@@ -10,7 +10,7 @@ const port = 3000
 app.get('/', (_req, res) => {
   const jsx = render(<App />)
 
-  const clientBundleScript = `<script src="http://localhost:8080/app.js"></script>`
+  const clientBundleScript = `<script src="http://localhost:8080/hydrate.js"></script>`
 
   res.send(html`
     <!DOCTYPE html>

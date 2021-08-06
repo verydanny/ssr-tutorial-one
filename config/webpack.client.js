@@ -15,7 +15,8 @@ const splitChunks = {
 
 const clientConfig = sharedConfig({
   entry: {
-    app: './src/client/render.tsx',
+    render: './src/client/render.tsx',
+    hydrate: './src/client/hydrate.tsx',
   },
   profile: process.env.STATS === 'true',
   output: {
