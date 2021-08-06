@@ -1,6 +1,7 @@
 const path = require('path')
 const process = require('process')
 const webpackNodeExternals = require('webpack-node-externals')
+
 const sharedConfig = require('./webpack.shared')
 const clientPort = 8080
 
