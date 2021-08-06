@@ -9,7 +9,8 @@
     "dev:client": "yarn webpack serve --config config/webpack.client.js",
     "build:client": "yarn clear:client && NODE_ENV=production yarn webpack -c config/webpack.client.js",
     "build:client-stats": "STATS=true NODE_ENV=production yarn webpack -c config/webpack.client.js --json=compilation-stats.json",
-    "build:server": "yarn clear:server && yarn webpack -c config/webpack.server.js",
+    "build:server-stats": "STATS=true NODE_ENV=production yarn webpack -c config/webpack.server.js --json=compilation-stats.json",
+    "build:server": "yarn clear:server && NODE_ENV=production yarn webpack -c config/webpack.server.js",
     "prod:server": "yarn build:server && node dist/server"
   },
   "repository": "git@github.com:verydanny/ssr-tutorial-one.git",
