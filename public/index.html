@@ -11,17 +11,5 @@
   </head>
   <body>
     <div id="app"></div>
-    <script>
-      const appSource = `http://localhost:8080/render.js`
-
-      function addScript(src) {
-        const script = document.createElement('script')
-        script.setAttribute('src', src)
-        document.body.appendChild(script)
-      }
-
-      setTimeout(() => addScript(appSource), 2000)
-      
-    </script>
   </body>
 </html>
